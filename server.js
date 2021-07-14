@@ -6,9 +6,12 @@ const app = express();
 //CONNECT DB
 dbConnect();
 
-
+//middleware routing body parse
+app.use(express.json());
 
 //create route(deplacement men pagel page)
+app.use("/api/contact", require("./routes/Contacts"))
+
 const PORT=process.env.PORT;
 //creation de serveur
   app.listen(PORT,(err)=>
