@@ -1,9 +1,9 @@
 //import des constants
 import {
     GET_CONTACT,
-GET_CONTACTS_FAIL,
- GET_CONTACTS_LOAD,
- GET_CONTACTS_SUCESS,EDIT_CONTACT
+    GET_CONTACTS_FAIL,
+    GET_CONTACTS_LOAD,
+    GET_CONTACTS_SUCESS,EDIT_CONTACT
 } from "../constants/contacts"
 //Initial STATE
 const initialState={

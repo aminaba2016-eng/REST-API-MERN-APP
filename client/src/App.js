@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import ContactList from './Components/ContactList';
 import Add from './Components/Add';
@@ -16,7 +15,7 @@ function App() {
   return (
     <div className="App">
       <h2>Workshop MERN</h2>
-      <Button inverted color='blue' onClick={() => dispatch(toggleTrue())} >
+      <Button inverted color='blue' onClick={() => dispatch(toggleFalse())} >
         <Link to = "/add">Add contact</Link>
       </Button>
       <Button inverted color='blue' onClick={() => dispatch(toggleFalse())}>

@@ -2,6 +2,7 @@ import React, {useEffect} from 'react'
 import { useDispatch,useSelector } from 'react-redux'
 import Contact from "./Contact" 
 import {getContacts} from "../JS/actions/contacts"
+import {contactReducer} from '../JS/reducers/contacts'
 const ContactList = () => {
     const dispatch = useDispatch()
     const contacts = useSelector(state => state.contactReducer.contacts);

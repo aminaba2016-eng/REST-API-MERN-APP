@@ -6,15 +6,14 @@ import { useDispatch,useSelector } from 'react-redux'
 
 
 
-
 const Add = () => {
     const [user, setUser] = useState({name:"",email:"",phone:""}) 
     const useReducer = useSelector((state) => state.contactReducer.user)
     const edit = useSelector((state) => state.editReducer.edit)
-const dispatch = useDispatch()
+    const dispatch = useDispatch()
     useEffect(()=>{
-   edit? setUser(useReducer):setUser({name:"",email:"",phone:""});
-},[edit,useReducer])
+    edit? setUser(useReducer):setUser({name:"",email:"",phone:""});
+    },[edit,useReducer])
 const handleContact = () =>{
     if(!edit)  {
       dispatch(postContact(user))
